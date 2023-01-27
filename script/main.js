@@ -18,7 +18,7 @@ function changeBGImage(){
 	//theHeadline.classList.add('orange-headline')
 
 	//change the background image in the drop zone
-	puzzleBoard.style.backgroundImage = "url("../images/backGround"' + this.id + '"jpg")";
+	puzzleBoard.style.backgroundImage = "url('"../images/backGround +"'" this.id + '"jpg")";
 
 }
 
