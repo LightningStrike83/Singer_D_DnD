@@ -27,7 +27,7 @@ function changeBGImage(){
 
 	// you can use variables, functions, etc. inline in your code this way
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
-
+	{return changeBGImage}
 }
 
 //don't let the default behaviour of certain elements happen- block it
@@ -55,6 +55,7 @@ function handleDrop(e) {
 		this.appendChild(draggedPiece);
 	}
 }
+
 
 //event handling at the bottom
 //how is the user going to interact with the elements/controls you provide?
