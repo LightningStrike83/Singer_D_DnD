@@ -1,6 +1,11 @@
 # DnD Crushing Bugs 
 
-Crushing Bugs for a DnD Puzzle Board  
+Solving bugs for the dungeons and dragons puzzle board. Two main issues were found:  
+-More than one piece can be placed in an area at one given time.  
+-When the background image changes, the puzzle pieces are not reset back to their original positions.  
+
+The task is to solve these bugs and potentially find a solution to a third optional bug:  
+-When the background image changes, the puzzle pieces do not change to reflect the new puzzle board.  
 
 ## Usage
 
@@ -8,11 +13,15 @@ TODO: Write usage instructions
 
 ## Contributing  
 
-Singer, Dan- Author  
+Singer, Dan  
+Westrop, Sophia  
+ChatGPT  
 
 ## Credits
 
-Singer, Dan  
+Singer, Dan- Author  
+Westrop, Sophia- Study Buddy/Code Research Assistance  
+ChatGPT- Code Checker and Helper   
 
 ## License  
 
