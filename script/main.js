@@ -13,6 +13,7 @@ let navButtons = document.querySelectorAll('#buttonHolder img'),
 	dropZones = document.querySelectorAll('.drop-zone'),
 	puzzleBoard = document.querySelector('.puzzle-board'),
 	tempLink = document.querySelector('a'),
+	puzzlePieceDiv = document.querySelector ('.puzzle-pieces'),
 	// set up a global variable to store a reference to the dragged piece
 	// I need to know this later when I drop it on a zone 
 	draggedPiece;
@@ -27,7 +28,7 @@ function changeBGImage(){
 
 	// you can use variables, functions, etc. inline in your code this way
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
-	{return changeBGImage}
+	resetPuzzle();
 }
 
 //don't let the default behaviour of certain elements happen- block it
@@ -56,6 +57,14 @@ function handleDrop(e) {
 	}
 }
 
+function resetPuzzle() {
+    dropZones.forEach(zone => {
+        while (zone.firstChild) {
+            puzzlePieceDiv.appendChild(zone.firstChild);
+        }
+    })
+}
+
 
 //event handling at the bottom
 //how is the user going to interact with the elements/controls you provide?
@@ -70,6 +79,7 @@ puzzlePieces.forEach(piece => piece.addEventListener('dragstart', handleStartDra
 //add the dragover handling to the drop zones
 dropZones.forEach(zone => zone.addEventListener ('dragover', handleDragOver));
 dropZones.forEach(zone => zone.addEventListener ('drop', handleDrop));
+topLeft.addEventListener('click', logID);
 
 // temp handling
 
