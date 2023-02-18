@@ -26,3 +26,5 @@ ChatGPT- Code Checker and Helper
 ## License  
 
 MIT  
+
+![The hilarious and famous DnD story involving a gazebo](images/gazebo_story.jpg)  
