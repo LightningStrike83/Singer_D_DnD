@@ -23,6 +23,8 @@ Singer, Dan- Author
 Westrop, Sophia- Study Buddy/Code Research Assistance  
 ChatGPT- Code Checker and Helper   
 
+Gazebo story credit: https://www.facebook.com/DnDDads/posts/did-you-ever-hear-the-tale-of-eric-and-the-dread-gazebo/886671365369918/  
+
 ## License  
 
 MIT  
